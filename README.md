@@ -27,6 +27,8 @@ Python, BeautifulSoup, NLTK (VADER), pandas, matplotlib, seaborn
 - Daily sentiment is noisy, and time coverage differs by company, so no reliable trend can be claimed
 - Source names (e.g. "Yahoo Finance") dominated raw word counts and were removed as noise
 - After cleaning, the most frequent terms were topical (SpaceX, merger, iPhone, Barclays, Musk)
+  ## Conclusion
+Sentiment across AAPL, TSLA and NVDA headlines is mostly mild and close to neutral. Differences between companies are small: AAPL scored highest on average, while TSLA showed the most extreme negative headlines (higher volatility). Headline length has no meaningful relationship with sentiment. Because the sample is small, covers a short and uneven time window, and relies on a general-purpose lexicon (VADER), these results are exploratory and should not be read as trading signals.
 ## Limitations
 - VADER's general-purpose lexicon misreads some financial headlines, so I added custom financial words
 - Small sample from a single source and a short time window
