@@ -19,11 +19,19 @@ Python, BeautifulSoup, NLTK (VADER), pandas, matplotlib, seaborn
 
 - AAPL had the highest average sentiment (~0.12), followed by TSLA (~0.08) and NVDA (~0.06)
 - NVDA had the largest share of negative headlines (~30%)
-
+## Key Findings
+- Cleaned 302 scraped headlines down to 296 after removing 6 duplicates
+- Many headlines score exactly 0 (neutral), the largest bin in the distribution
+- TSLA shows the most extreme negative outliers (higher volatility); AAPL's median is near zero
+- Headline length is practically uncorrelated with sentiment (r = -0.03)
+- Daily sentiment is noisy, and time coverage differs by company, so no reliable trend can be claimed
+- Source names (e.g. "Yahoo Finance") dominated raw word counts and were removed as noise
+- After cleaning, the most frequent terms were topical (SpaceX, merger, iPhone, Barclays, Musk)
 ## Limitations
 - VADER's general-purpose lexicon misreads some financial headlines, so I added custom financial words
 - Small sample from a single source and a short time window
 - Differences between companies are small and not statistically tested
+- time Uneve coverage across companies (RSS returns only recent items)
 
 ## Future Work
 - Replace VADER with FinBERT (a finance-trained model)
