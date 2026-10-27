@@ -1,4 +1,4 @@
-# Stock Market Sentiment Analysis from Financial News
+# Exploratory Data Analysis of Financial News Sentiment
 
 Scraping financial news headlines and visualizing sentiment scores for AAPL, TSLA, and NVDA.
 
